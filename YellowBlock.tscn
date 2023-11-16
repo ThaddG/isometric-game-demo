@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://easucu5i570"]
+
+[ext_resource type="Texture2D" uid="uid://dg2j0of5pb7t3" path="res://sprites/platformerTile_42.png" id="1_ly0bb"]
+
+[sub_resource type="ConvexPolygonShape2D" id="ConvexPolygonShape2D_qjp0n"]
+
+[node name="StaticBody2D" type="StaticBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("ConvexPolygonShape2D_qjp0n")
+
+[node name="PlatformerTile42" type="Sprite2D" parent="."]
+position = Vector2(1.90735e-06, -64)
+texture = ExtResource("1_ly0bb")
